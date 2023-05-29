@@ -18,13 +18,13 @@ Persistence Volume
 
 ### HELM
 
-    1. Add repo:
+1. Add repo:
 
 ```bash
 helm repo add atlassian-data-center https://atlassian.github.io/data-center-helm-charts
 ```
 
-    2. Install helm chart:
+2. Install helm chart:
 
 ```bash
 helm install jira813 atlassian-data-center/jira --namespace jira --create-namespace --version 1.12.0 --values values.yaml
