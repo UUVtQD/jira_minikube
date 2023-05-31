@@ -29,3 +29,9 @@ helm repo add atlassian-data-center https://atlassian.github.io/data-center-helm
 ```bash
 helm install jira813 atlassian-data-center/jira --namespace jira --create-namespace --version 1.12.0 --values values.yaml
 ```
+
+3. Uninstall helm chart
+
+```bash
+helm uninstall -n jira jira813
+```
